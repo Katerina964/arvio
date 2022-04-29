@@ -1,0 +1,13 @@
+
+{% block content %}
+<form action="{% url 'app:get_pdf' %}" method="POST" >
+  {% csrf_token %}
+     <div style="margin-top: 20px;">
+       <table>
+          {{ form  }}
+      </table></div>
+      <div style="margin-bottom: 20px;" >
+      <button type="submit">Send</button></div>
+      </form>
+</div>
+{% endblock %}

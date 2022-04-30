@@ -13,7 +13,8 @@ def pdf(url):
                 for chunk in response:
                     f.write(chunk)
             text = extract_text(file_name)
-    return text
+
+        return text
 
 
 # pdf("https://whats-that.s3.eu-central-1.amazonaws.com/energy-data/2017-46-77-53527.pdf")

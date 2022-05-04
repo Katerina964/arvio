@@ -13,6 +13,7 @@ class UserTestCase(TestCase):
         self.assertEqual(u.username, username)
         self.assertTrue(u.check_password(password))
         print("test finished")
+        print("new Line")
 
 
 # try CI CD

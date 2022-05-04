@@ -9,8 +9,10 @@ class UserTestCase(TestCase):
         u = User(username=username)
         u.set_password(password)
         u.save()
+        print(u)
         self.assertEqual(u.username, username)
         self.assertTrue(u.check_password(password))
+        print("test finished")
 
 
 # try CI CD
